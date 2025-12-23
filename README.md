@@ -35,7 +35,7 @@ The compiler is structured following the classic compilation phases, using an Ob
 
  - Control Flow: Manages dynamic labels for jumping instructions (DSVF, DSVS).
 
-📋 Supported Features
+## Supported Features
 [x] Primitive Types: integer, boolean.
 
 [x] Control Structures: if-then-else, while.
@@ -46,7 +46,7 @@ The compiler is structured following the classic compilation phases, using an Ob
 
 [x] Static Scoping: Global and local variables with lexical level management.
 
-🛠️ How to Run
+## How to Run
 Prerequisites: Ensure you have Python 3 and PLY installed:
 ```
 pip install ply
