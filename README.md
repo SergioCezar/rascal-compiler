@@ -9,17 +9,17 @@ This repository contains a complete compiler for the Rascal language (a reduced 
 ## Architecture
 The compiler is structured following the classic compilation phases, using an Object-Oriented approach for the Intermediate Representation (IR).
 
-1. Lexical Analyzer (rascal_lexer.py)
+### 1. Lexical Analyzer (rascal_lexer.py)
  - Uses Regular Expressions (Regex) to identify tokens such as reserved keywords (if, then, while, program), identifiers, numbers, and operators.
 
-2. Syntactic Analyzer & AST (rascal_parser.py and rascal_ast.py)
+### 2. Syntactic Analyzer & AST (rascal_parser.py and rascal_ast.py)
  - LALR Parsing: Implements a context-free grammar using the PLY library.
 
  - Bottom-Up Construction: The Abstract Syntax Tree (AST) is built from the leaves up to the root during grammar reductions.
 
  - Structural Mapping: Each language construct (assignment, conditional, loop) is mapped to a specific AST Class, facilitating multi-pass analysis.
 
-3. Semantic Analyzer (rascal_semantic.py)
+### 3. Semantic Analyzer (rascal_semantic.py)
  - Implemented using the Visitor Design Pattern.
 
  - Scope Management: Hierarchical linked symbol tables that support static scoping (global and local scopes).
@@ -28,7 +28,7 @@ The compiler is structured following the classic compilation phases, using an Ob
 
  - Function Returns: Implements an internal variable naming convention (prefixed with @) to map return addresses and values in the MEPA stack.
 
-4. Code Generator (rascal_codegen.py)
+### 4. Code Generator (rascal_codegen.py)
  - Also based on the Visitor Pattern, it traverses the validated AST and emits the corresponding MEPA instructions.
 
  - Stack Arithmetic: Translates infix expressions into postfix stack operations.
@@ -55,7 +55,8 @@ Compile a file:
 ```
 python rascal_compiler.py example.rascal
 ```
-Output: The compiler will generate a .mepa file containing the machine code ready to be executed in a MEPA simulator.
+##Output
+The compiler will generate a .mepa file containing the machine code ready to be executed in a MEPA simulator.
 
 ## Rascal Code Example
 
