@@ -20,20 +20,20 @@ The compiler is structured following the classic compilation phases, using an Ob
  - Structural Mapping: Each language construct (assignment, conditional, loop) is mapped to a specific AST Class, facilitating multi-pass analysis.
 
 3. Semantic Analyzer (rascal_semantic.py)
-Implemented using the Visitor Design Pattern.
+ - Implemented using the Visitor Design Pattern.
 
-Scope Management: Hierarchical linked symbol tables that support static scoping (global and local scopes).
+ - Scope Management: Hierarchical linked symbol tables that support static scoping (global and local scopes).
 
-Type Checking: Validation of integer and boolean expressions.
+ - Type Checking: Validation of integer and boolean expressions.
 
-Function Returns: Implements an internal variable naming convention (prefixed with @) to map return addresses and values in the MEPA stack.
+ - Function Returns: Implements an internal variable naming convention (prefixed with @) to map return addresses and values in the MEPA stack.
 
 4. Code Generator (rascal_codegen.py)
-Also based on the Visitor Pattern, it traverses the validated AST and emits the corresponding MEPA instructions.
+ - Also based on the Visitor Pattern, it traverses the validated AST and emits the corresponding MEPA instructions.
 
-Stack Arithmetic: Translates infix expressions into postfix stack operations.
+ - Stack Arithmetic: Translates infix expressions into postfix stack operations.
 
-Control Flow: Manages dynamic labels for jumping instructions (DSVF, DSVS).
+ - Control Flow: Manages dynamic labels for jumping instructions (DSVF, DSVS).
 
 📋 Supported Features
 [x] Primitive Types: integer, boolean.
