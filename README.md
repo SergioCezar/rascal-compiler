@@ -37,9 +37,13 @@ The compiler is structured following the classic compilation phases, using an Ob
 
 📋 Supported Features
 [x] Primitive Types: integer, boolean.
+
 [x] Control Structures: if-then-else, while.
+
 [x] Subroutines: Procedures and Functions with recursion support.
+
 [x] I/O Operations: read and write commands.
+
 [x] Static Scoping: Global and local variables with lexical level management.
 
 🛠️ How to Run
@@ -55,6 +59,7 @@ Output: The compiler will generate a .mepa file containing the machine code read
 
 ## Rascal Code Example
 
+```bash
 program Example;
 var x, res : integer;
 
@@ -71,3 +76,4 @@ begin
     res := factorial(x);
     write(res);
 end.
+```
