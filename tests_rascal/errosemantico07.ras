@@ -1,0 +1,8 @@
+program notNaoBool;
+var
+    x: integer;
+    b: boolean;
+begin
+    x := 0;
+    b := not x
+end.

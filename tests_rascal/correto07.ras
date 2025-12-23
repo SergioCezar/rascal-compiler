@@ -1,0 +1,20 @@
+program Escopo;
+var a: integer;
+
+	function f(n: integer): integer;
+	var t: integer;
+	begin
+		t := n + 1;
+		f := t
+	end;
+
+	procedure p(x: integer; b: boolean);
+	var a: boolean;
+	begin
+		a := b;
+		if a then write(x) else write(x+1)
+	end;
+
+begin
+	a := 5; p(a, false); write(f(a))
+end.

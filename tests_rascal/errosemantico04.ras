@@ -1,0 +1,13 @@
+program procArgsErrados;
+var a, b : integer;
+
+procedure soma2(x, y : integer);
+begin
+    write(x + y)
+end;
+
+begin
+    a := 1;
+    b := 2;
+    soma2(a)
+end.

@@ -1,0 +1,8 @@
+program tipoIncompativelAtrib;
+var x : integer;
+    b : boolean;
+begin
+    b := true;
+    x := b;
+    write(x)
+end.

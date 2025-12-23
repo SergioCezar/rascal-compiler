@@ -1,0 +1,11 @@
+program condicaoNaoBooleana;
+var x : integer;
+
+begin
+    x := 0;
+    if x then
+        x := 1
+    else
+        x := 2;
+    write(x)
+end.

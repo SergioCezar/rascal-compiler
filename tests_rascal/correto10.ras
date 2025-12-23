@@ -1,0 +1,16 @@
+program max2;
+var a, b, m : integer;
+
+function max(x, y : integer) : integer;
+begin
+    if x >= y then
+        max := x
+    else
+        max := y
+end;
+
+begin
+    read(a, b);
+    m := max(a, b);
+    write(m)
+end.

@@ -1,0 +1,12 @@
+program funcSemRetorno;
+var x : integer;
+
+function f(n : integer) : integer;
+begin
+    n := n + 1
+end;
+
+begin
+    x := f(10);
+    write(x)
+end.

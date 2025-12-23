@@ -1,0 +1,7 @@
+program varNaoDeclarada;
+var x : integer;
+begin
+    x := 10;
+    y := 20;
+    write(x)
+end.

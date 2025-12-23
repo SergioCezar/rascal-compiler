@@ -1,0 +1,6 @@
+program varComoFunc;
+var x: integer;
+begin
+    x := 0;
+    x()
+end.

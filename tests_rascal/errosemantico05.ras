@@ -1,0 +1,14 @@
+program funcTipoArgErrado;
+var x : integer;
+    flag : boolean;
+
+function inc(n : integer) : integer;
+begin
+    inc := n + 1
+end;
+
+begin
+    flag := true;
+    x := inc(flag);
+    write(x)
+end.
